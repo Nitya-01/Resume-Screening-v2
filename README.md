@@ -8,10 +8,10 @@
 
 A machine learning application project that automatically classifies resumes into job categories using real-world data from Kaggle. Built with Python, Streamlit and powered by NLP techniques.
 
-## 🌟 Key Features
+## Key Features
 
 ### Core Functionality
-- **AI-Powered Classification**: Uses trained ML models (SVM/Random Forest) with TF-IDF vectorization
+- **ML Classification**: Uses trained ML models (SVM/Random Forest) with TF-IDF vectorization
 - **Real Data Training**: Trained on actual resume dataset from Kaggle 
 - **Multi-Format Support**: Handles PDF, DOCX and TXT files seamlessly. Single and Multiple file uploading and analyzing
 - **Real-Time Processing**: Instant resume analysis with confidence scoring
@@ -76,8 +76,8 @@ Experience the app in action: [Coming Soon -> Deployment in Progress]
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/Nitya-01/Resume-Screening-V2.git
-   cd Resume-Screening-V2
+   git clone https://github.com/Nitya-01/Resume-Screening-v2.git
+   cd Resume-Screening-v2
    ```
 
 2. **Create Virtual Environment**
@@ -150,16 +150,14 @@ resume-screening-app-v2/
 │
 ├──   data/                     # Dataset directory
 │   ├── Resume.csv              # Raw resume dataset
+│   ├── label_encoder.pkl       # Encoding techniques
 │   └── processed_resumes.csv   # Processed data
 │
-├──   models/                   # Trained model storage
-│   ├── resume_classifier.pkl   # Trained classifier
-│   ├── tfidf_vectorizer.pkl    # TF-IDF vectorizer
-│   ├── category_mapping.pkl    # Label mappings
-│   └── model_performance.txt   # Performance metrics
-│
-└──   outputs/                  # Analysis results
-    └── batch_results.csv       # Batch processing results
+└──   models/                   # Trained model storage
+    ├── resume_classifier.pkl   # Trained classifier
+    ├── tfidf_vectorizer.pkl    # TF-IDF vectorizer
+    ├── category_mapping.pkl    # Label mappings
+    └── label_encoder.pkl       # Performance metrics
 ```
 
 ## Technical Details
