@@ -120,6 +120,7 @@ If you have a pre-trained model, place the model files in the `models/` director
 
 2. **Train the Model**
    ```bash
+   python data_loader.py
    python train_real_model.py
    ```
    This will:
